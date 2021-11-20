@@ -15,6 +15,10 @@
     - role: elliotweiser.osx-command-line-tools
     - role: geerlingguy.mac.homebrew
       tags: ['homebrew']
+    - role: gantsign.oh-my-zsh
+      tags: ['zsh', 'dotfiles']
+      users:
+        - username: "{{ lookup('env', 'USER') }}"
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
@@ -24,10 +28,6 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
-    - role: gantsign.oh-my-zsh
-      tags: ['zsh', 'dotfiles']
-      users:
-        - username: "{{ lookup('env', 'USER') }}"
 
 
   tasks:
@@ -49,6 +49,9 @@
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ['sublime-text']
+
+    - import_tasks: tasks/zsh.yml
+      tags: ['zsh', 'dotfiles']
 
     - name: Run configured post-provision ansible task files.
       include_tasks: "{{ outer_item }}"
