@@ -24,6 +24,11 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: gantsign.oh-my-zsh
+      tags: ['zsh', 'dotfiles']
+      users:
+        - username: "{{ lookup('env', 'USER') }}"
+
 
   tasks:
     - import_tasks: tasks/sudoers.yml
