@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+absolute_import	roles/gantsign.oh-my-zsh/molecule/default/tests/conftest.py	/^from __future__ import absolute_import$/;"	i
+activate_virtualenv	roles/gantsign.oh-my-zsh/moleculew	/^activate_virtualenv() {$/;"	f
+banner	roles/gantsign.oh-my-zsh/moleculew	/^banner() {$/;"	f
+build_dependencies_present	roles/gantsign.oh-my-zsh/moleculew	/^build_dependencies_present() {$/;"	f
+detemine_versions	roles/gantsign.oh-my-zsh/moleculew	/^detemine_versions() {$/;"	f
+docker_present	roles/gantsign.oh-my-zsh/moleculew	/^docker_present() {$/;"	f
+hr	roles/gantsign.oh-my-zsh/moleculew	/^hr() {$/;"	f
+install_ansible	roles/gantsign.oh-my-zsh/moleculew	/^install_ansible() {$/;"	f
+install_ansible_lint	roles/gantsign.oh-my-zsh/moleculew	/^install_ansible_lint() {$/;"	f
+install_docker_lib	roles/gantsign.oh-my-zsh/moleculew	/^install_docker_lib() {$/;"	f
+install_flake8	roles/gantsign.oh-my-zsh/moleculew	/^install_flake8() {$/;"	f
+install_molecule	roles/gantsign.oh-my-zsh/moleculew	/^install_molecule() {$/;"	f
+install_testinfra	roles/gantsign.oh-my-zsh/moleculew	/^install_testinfra() {$/;"	f
+install_yamllint	roles/gantsign.oh-my-zsh/moleculew	/^install_yamllint() {$/;"	f
+json	roles/elliotweiser.osx-command-line-tools/tests/version_check.py	/^import json$/;"	i
+main	roles/elliotweiser.osx-command-line-tools/tests/version_check.py	/^def main(argv):$/;"	f
+os	roles/gantsign.oh-my-zsh/molecule/default/tests/conftest.py	/^import os$/;"	i
+parse_args	roles/gantsign.oh-my-zsh/moleculew	/^parse_args() {$/;"	f
+print_versions	roles/gantsign.oh-my-zsh/moleculew	/^print_versions() {$/;"	f
+pyenv_present	roles/gantsign.oh-my-zsh/moleculew	/^pyenv_present() {$/;"	f
+pytest	roles/gantsign.oh-my-zsh/molecule/default/tests/conftest.py	/^import pytest$/;"	i
+pytest	roles/gantsign.oh-my-zsh/molecule/default/tests/test_role.py	/^import pytest$/;"	i
+pytest_runtest_setup	roles/gantsign.oh-my-zsh/molecule/default/tests/conftest.py	/^def pytest_runtest_setup(item):$/;"	f
+python_present	roles/gantsign.oh-my-zsh/moleculew	/^python_present() {$/;"	f
+query_latest_package_version	roles/gantsign.oh-my-zsh/moleculew	/^query_latest_package_version() {$/;"	f
+query_latest_python_version	roles/gantsign.oh-my-zsh/moleculew	/^query_latest_python_version() {$/;"	f
+query_package_versions	roles/gantsign.oh-my-zsh/moleculew	/^query_package_versions() {$/;"	f
+re	roles/elliotweiser.osx-command-line-tools/tests/test_default.py	/^import re$/;"	i
+requests	roles/elliotweiser.osx-command-line-tools/tests/version_check.py	/^import requests$/;"	i
+role	roles/elliotweiser.osx-command-line-tools/tests/version_check.py	/^    msg += "unsupported by Ansible Galaxy. Attempts to import this role "$/;"	i
+run_as_root	roles/gantsign.oh-my-zsh/moleculew	/^run_as_root() {$/;"	f
+sys	roles/elliotweiser.osx-command-line-tools/tests/version_check.py	/^import sys$/;"	i
+test_clt_package_metadata	roles/elliotweiser.osx-command-line-tools/tests/test_default.py	/^def test_clt_package_metadata(host):$/;"	f
+test_command_line_tools_dir	roles/elliotweiser.osx-command-line-tools/tests/test_default.py	/^def test_command_line_tools_dir(host):$/;"	f
+test_console_setup	roles/gantsign.oh-my-zsh/molecule/default/tests/test_role.py	/^def test_console_setup(host):$/;"	f
+test_git_is_useable	roles/elliotweiser.osx-command-line-tools/tests/test_default.py	/^def test_git_is_useable(host):$/;"	f
+test_oh_my_zsh_config	roles/gantsign.oh-my-zsh/molecule/default/tests/test_role.py	/^def test_oh_my_zsh_config(host, username, theme, plugins):$/;"	f
+test_oh_my_zsh_install	roles/gantsign.oh-my-zsh/molecule/default/tests/test_role.py	/^def test_oh_my_zsh_install(host, username):$/;"	f
+test_oh_my_zsh_is_not_installed_for_excluded_users	roles/gantsign.oh-my-zsh/molecule/default/tests/test_role.py	/^def test_oh_my_zsh_is_not_installed_for_excluded_users(host, username):$/;"	f
+test_tmp_file_is_gone	roles/elliotweiser.osx-command-line-tools/tests/test_default.py	/^def test_tmp_file_is_gone(host):$/;"	f
+testinfra	roles/gantsign.oh-my-zsh/molecule/default/tests/conftest.py	/^        import testinfra$/;"	i
+this	roles/elliotweiser.osx-command-line-tools/tests/version_check.py	/^    msg += "unsupported by Ansible Galaxy. Attempts to import this role "$/;"	i
+virtualenv_presant	roles/gantsign.oh-my-zsh/moleculew	/^virtualenv_presant() {$/;"	f
+wrapper_clean	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_clean() {$/;"	f
+wrapper_freeze	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_freeze() {$/;"	f
+wrapper_help	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_help() {$/;"	f
+wrapper_options_ansible	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_ansible() {$/;"	f
+wrapper_options_ansible_lint	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_ansible_lint() {$/;"	f
+wrapper_options_docker_lib	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_docker_lib() {$/;"	f
+wrapper_options_flake8	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_flake8() {$/;"	f
+wrapper_options_molecule	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_molecule() {$/;"	f
+wrapper_options_python	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_python() {$/;"	f
+wrapper_options_scenario	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_scenario() {$/;"	f
+wrapper_options_testinfra	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_testinfra() {$/;"	f
+wrapper_options_yamllint	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_options_yamllint() {$/;"	f
+wrapper_unfreeze	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_unfreeze() {$/;"	f
+wrapper_upgrade	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_upgrade() {$/;"	f
+wrapper_upgrade_versions	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_upgrade_versions() {$/;"	f
+wrapper_version	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_version() {$/;"	f
+wrapper_versions	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_versions() {$/;"	f
+wrapper_virtualenv	roles/gantsign.oh-my-zsh/moleculew	/^wrapper_virtualenv() {$/;"	f
+yaml	roles/elliotweiser.osx-command-line-tools/tests/version_check.py	/^import yaml$/;"	i
