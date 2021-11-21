@@ -6,17 +6,27 @@
     repo: 'https://github.com/amix/vimrc.git'
     dest: "{{ lookup('env', 'HOME') }}/.vim_runtime"
     depth: 1
-- name: Connect dotfiles with ultimate vim.
+
+- name: Rename existing vimrc to overrides.
   become: true
   command: "mv {{ lookup('env', 'HOME') }}/.vimrc {{ lookup('env', 'HOME') }}/.ultimate_vim_overrides.vim"
+
 - name: Install ultimate vim.
   become: true
   become_user: "{{ lookup('env', 'USER') }}"
   shell: "{{ lookup('env', 'HOME') }}/.vim_runtime/install_awesome_vimrc.sh"
+
 - name: Connect dotfiles with ultimate vim.
   become: true
+  become_user: "{{ lookup('env', 'USER') }}"
   ansible.builtin.file:
     src: "{{ lookup('env', 'HOME') }}/.ultimate_vim_overrides.vim"
     dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_configs.vim"
     state: link
 
+- name: Clone vim-numbertoggle.
+  become: true
+  become_user: "{{ lookup('env', 'USER') }}"
+  ansible.builtin.git:
+    repo: 'https://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
+    dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_plugins/vim-numbertoggle"
