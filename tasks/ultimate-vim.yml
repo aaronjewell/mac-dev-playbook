@@ -31,10 +31,18 @@
     repo: 'https://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
     dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_plugins/vim-numbertoggle"
 
-- name: Install vim-gutentags
+- name: Install vim-gutentags.
   become: true
   become_user: "{{ lookup('env', 'USER') }}"
   ansible.builtin.git:
     repo: 'https://github.com/ludovicchabant/vim-gutentags.git'
     dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_plugins/vim-gutentags"
 
+- name: Install coc.
+  become: true
+  become_user: "{{ lookup('env', 'USER') }}"
+  ansible.builtin.git:
+    repo: 'https://github.com/neoclide/coc.nvim.git'
+    dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_plugins/coc"
+    depth: 1
+    version: release
