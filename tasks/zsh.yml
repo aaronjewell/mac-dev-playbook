@@ -1,5 +1,12 @@
 ---
 - name: "Install zsh-autosuggestions plugin."
+  become: true
+  become_user: "{{ lookup('env', 'USER') }}"
   ansible.builtin.git:
     repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
     dest: '~/.oh-my-zsh/custom/plugins/zsh-autosuggestions'
+
+- name: "Run fzf install script from homebrew package."
+  become: true
+  become_user: "{{ lookup('env', 'USER') }}"
+  shell: $(brew --prefix)/opt/fzf/install --no-update-rc
