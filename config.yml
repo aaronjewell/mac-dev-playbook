@@ -10,11 +10,14 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - ack
+  - ag
   - autoconf
   - bash-completion
-  - ctags
+  - core-utils
+  - cowsay
   - doxygen
+  - fd
+  - fzf
   - gettext
   - gifsicle
   - git
@@ -22,28 +25,38 @@ homebrew_installed_packages:
   - go
   - gpg
   - httpie
+  - imagemagick
   - iperf
   - jq
   - libevent
-  - sqlite
   - mcrypt
   - nmap
   - node
   - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
   - openssl
+  - php
   - pv
+  - python
+  - reattach-to-user-namespace
+  - readline
+  - ripgrep
+  - ruby
+  - sqlite
+  - ssh-copy-id
+  - tmux
+  - tree
+  - universal-ctags
+  - vim
   - wget
   - wrk
+  - yarn
   - zsh-autosuggestions
   - zsh-history-substring-search
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - universal-ctags/universal-ctags
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -52,6 +65,7 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
+  - iterm2
   - sequel-ace
   - slack
 homebrew_cask_accept_external_apps: true

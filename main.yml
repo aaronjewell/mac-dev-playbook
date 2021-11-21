@@ -19,9 +19,6 @@
       tags: ['zsh', 'dotfiles']
       users:
         - username: "{{ lookup('env', 'USER') }}"
-    - role: geerlingguy.dotfiles
-      when: configure_dotfiles
-      tags: ['dotfiles','vim']
     - role: geerlingguy.mac.mas
       when: mas_installed_apps or mas_installed_app_ids
       tags: ['mas']
@@ -50,11 +47,11 @@
       when: configure_sublime
       tags: ['sublime-text']
 
+    - import_tasks: tasks/dotfiles.yml
+      tags: ['dotfiles']
+
     - import_tasks: tasks/zsh.yml
       tags: ['zsh', 'dotfiles']
-
-    - import_tasks: tasks/ultimate-vim.yml
-      tags: ['vim', 'dotfiles']
 
     - name: Run configured post-provision ansible task files.
       include_tasks: "{{ outer_item }}"
