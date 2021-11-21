@@ -24,9 +24,17 @@
     dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_configs.vim"
     state: link
 
-- name: Clone vim-numbertoggle.
+- name: Install vim-numbertoggle.
   become: true
   become_user: "{{ lookup('env', 'USER') }}"
   ansible.builtin.git:
     repo: 'https://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
     dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_plugins/vim-numbertoggle"
+
+- name: Install vim-gutentags
+  become: true
+  become_user: "{{ lookup('env', 'USER') }}"
+  ansible.builtin.git:
+    repo: 'https://github.com/ludovicchabant/vim-gutentags.git'
+    dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_plugins/vim-gutentags"
+
