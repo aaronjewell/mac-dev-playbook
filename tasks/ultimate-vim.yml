@@ -24,6 +24,12 @@
     dest: "{{ lookup('env', 'HOME') }}/.vim_runtime/my_configs.vim"
     state: link
 
+- name: Uninstall ctrlp.vim.
+  become: true
+  ansible.builtin.file:
+    path: "{{ lookup('env', 'HOME') }}/.vim_runtime/sources_non_forked/ctrlp.vim"
+    state: absent
+
 - name: Install vim-numbertoggle.
   become: true
   become_user: "{{ lookup('env', 'USER') }}"
