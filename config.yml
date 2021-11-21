@@ -13,6 +13,7 @@ homebrew_installed_packages:
   - ack
   - autoconf
   - bash-completion
+  - ctags
   - doxygen
   - gettext
   - gifsicle
