@@ -2,7 +2,7 @@
   become: true
   become_user: "{{ lookup('env', 'USER') }}"
   ansible.builtin.git:
-    repo: "https://github.com/aaronjewell/dotfiles.git"
+    repo: "git@github.com:aaronjewell/dotfiles.git"
     dest: "{{ lookup('env', 'HOME') }}/dotfiles"
 
 - name: Install dotfiles
